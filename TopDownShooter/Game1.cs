@@ -1,3 +1,5 @@
+using TopDownShooter._Managers;
+
 namespace Project002;
 
 public class Game1 : Game
@@ -5,6 +7,7 @@ public class Game1 : Game
     private readonly GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private GameManager _gameManager;
+    private MenuManager _menuManager;
 
     public Game1()
     {
@@ -22,6 +25,7 @@ public class Game1 : Game
 
         Globals.Content = Content;
         _gameManager = new();
+        _menuManager = new MenuManager();
 
         base.Initialize();
     }
@@ -45,10 +49,16 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.DarkGray);
+        GraphicsDevice.Clear(Color.Black);
 
         _spriteBatch.Begin();
-        _gameManager.Draw();
+        if(_menuManager.iniciar == true){
+            _gameManager.Draw();
+        }else{
+            _menuManager.Draw();
+        }
+
+        //_gameManager.Draw();
         _spriteBatch.End();
 
         base.Draw(gameTime);
