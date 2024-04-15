@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/bullet.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/exp.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/font.spritefont</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/player.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/tile1.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/tile2.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/tile3.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/tile4.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/tile5.png</File>
+    <File>C:/Users/joaor/Desktop/projeto-engine/Game-Engine/TopDownShooter/Content/zombie.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
