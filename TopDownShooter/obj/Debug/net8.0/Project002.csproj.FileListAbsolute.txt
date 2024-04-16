@@ -34,3 +34,4 @@ C:\Users\joaor\Desktop\projeto-engine\Game-Engine\TopDownShooter\obj\Debug\net8.
 C:\Users\joaor\Desktop\projeto-engine\Game-Engine\TopDownShooter\obj\Debug\net8.0\Project002.pdb
 C:\Users\joaor\Desktop\projeto-engine\Game-Engine\TopDownShooter\obj\Debug\net8.0\Project002.genruntimeconfig.cache
 C:\Users\joaor\Desktop\projeto-engine\Game-Engine\TopDownShooter\obj\Debug\net8.0\ref\Project002.dll
+C:\Users\joaor\Desktop\projeto-engine\Game-Engine\TopDownShooter\bin\Debug\net8.0\Content\start.xnb
