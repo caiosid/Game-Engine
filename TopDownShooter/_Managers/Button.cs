@@ -6,39 +6,25 @@ using Project002;
 
 namespace TopDownShooter._Managers
 {
-    public class Button(Texture2D t, Vector2 p)
+    public class Button : GameObject
+{
+    private Action _callback;
+
+    public Button(Texture2D image, Action callback) : base (image)
     {
-        private readonly Texture2D _texture = t;
-        private Vector2 _position = p;
-        private readonly Rectangle _rect = new((int)p.X, (int)p.Y, t.Width, t.Height);
-        private Color _shade = Color.White;
+        _callback = callback;
+    }
 
-        public void Update()
+    public override void Update(float deltaTime)
+    {
+        MouseState mouseState = Mouse.GetState();
+        if (mouseState.LeftButton == ButtonState.Pressed)
         {
-            if (Globals.MouseCursor.Intersects(_rect))
+            if (_bounds.Contains(mouseState.Position))
             {
-                _shade = Color.DarkGray;
-                if (Globals.Clicked)
-                {
-                    Click();
-                }
+                _callback.Invoke();
             }
-            else
-            {
-                _shade = Color.White;
-            }
-        }
-
-        public event EventHandler OnClick;
-
-        private void Click()
-        {
-            OnClick?.Invoke(this, EventArgs.Empty);
-        }
-
-        public void Draw()
-        {
-            Globals.SpriteBatch.Draw(_texture, _position, _shade);
         }
     }
+}
 }

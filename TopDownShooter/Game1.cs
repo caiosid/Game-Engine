@@ -25,7 +25,8 @@ public class Game1 : Game
 
         Globals.Content = Content;
         _gameManager = new();
-        _menuManager = new MenuManager();
+        _menuManager = new MenuManager(_gameManager);
+        _menuManager.Initialize();
 
         base.Initialize();
     }
@@ -43,7 +44,8 @@ public class Game1 : Game
 
         Globals.Update(gameTime);
         _gameManager.Update();
-
+        _menuManager.Update();  
+        Console.WriteLine(gameTime.ElapsedGameTime.TotalSeconds);
         base.Update(gameTime);
     }
 
